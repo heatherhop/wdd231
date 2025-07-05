@@ -79,6 +79,7 @@ header span {
 
 .navigation li.current {
     background-color: #eee;
+    color: #3a89c1;
 }
 
 .navigation a:hover {
@@ -96,7 +97,7 @@ footer {
 .social {
     display: flex;
     justify-content: center;
-    column-gap: 8px;;
+    column-gap: 8px;
 }
 
 .social a {

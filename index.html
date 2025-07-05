@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course Home Page</title>
+    <meta name="description" content="WDD 231 Course Home Page">
+    <meta name="author" content="Heather Hopkins">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"> -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 608px)">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <img src="images/circles-logo.svg" alt="site logo" width="24" height="24">
+        <span>Site Home</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="code-along-header/index.html">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="grid">
+            <section class="section-one">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, quod nobis. Nulla vitae amet
+                    corrupti
+                    voluptas necessitatibus et qui quae adipisci illo consectetur nam tempore, quaerat, aliquam sed
+                    repudiandae nesciunt nobis officia? Delectus reiciendis impedit vitae ipsum excepturi nam libero
+                    dolore!
+                    Animi iusto facilis nemo dolor tempora porro soluta facerevoluptas necessitatibus et qui quae
+                    adipisci
+                    illo consectetur nam tempore, quaerat, aliquam sed
+                    repudiandae nesciunt nobis officia? Delectus reiciendis impedit vitae ipsum excepturi nam libero
+                    dolore!
+                    Animi iusto facilis nemo dolor.</p>
+            </section>
+            <section class="section-two">
+                <h2>Student Photo</h2>
+                <img src="images/student-photo.webp" alt="student photo" width="200" height="300">
+            </section>
+            <section class="section-three">
+                <h2>Web & Computer Programming Certificate</h2>                
+                <div>
+                    <ul class="select-courses">
+                        <li id="all"><button type="button">ALL</button></li>
+                        <li id="cse"><button type="button">CSE</button></li>
+                        <li id="wdd"><button type="button">WDD</button></li>
+                    </ul>
+                    <ul class="courses" id="courses">    
+                    </ul>
+                    <p id="total"></p>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/heatherhop" target="_blank"><img src="images/mdi--github1.svg" alt="github logo"
+                    width="24" height="24"></a>
+            <a href="https://www.linkedin.com/in/heather-hopkins-7b834a35b/" target="_blank"><img
+                    src="images/mdi--linkedin1.svg" alt="linkedin logo" width="24" height="24"></a>
+            <a href="https://x.com/heathin77" target="_blank"><img src="images/line-md--twitter-x1.svg" alt="x logo"
+                    width="24" height="24"></a>
+        </div>
+        <div class="footer">
+            <p id="currentYear"><span></span></p>
+            <p id="lastModified"><span></span></p>
+        </div>
+    </footer>
 </body>
+
 </html>
