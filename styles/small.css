@@ -121,6 +121,8 @@ a {
 }
 
 .section-two img {
+    width: auto;
+    height: auto;
     margin-top: 10px;
     padding: 10px;
     border-radius: 15px;
