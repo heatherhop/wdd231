@@ -136,6 +136,3 @@ document.addEventListener("DOMContentLoaded", () => {
     const initialTotal = calcTotalCredits(courses);
     totalDisplay.innerHTML = `The total credits for courses listed above is ${initialTotal}`;
 });
-
-
-

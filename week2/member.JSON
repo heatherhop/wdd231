@@ -1,0 +1,33 @@
+{
+    "family_name": "Hopkins",
+    "moved_in_date": "2021-08-19",
+    "number_of_people": 5,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Heather Hopkins",
+            "gender": "Female",
+            "birthdate": "1985-01-01"
+        },
+        {
+            "name": "Kelly Gunderson",
+            "gender": "Male",
+            "birthdate": "2009-01-01"
+        },
+        {
+            "name": "Lane Anderson",
+            "gender": "Male",
+            "birthdate": "2011-01-01"
+        },
+        {
+            "name": "Orion Anderson",
+            "gender": "Female",
+            "birthdate": "2014-01-01"
+        },
+        {
+            "name": "Evie Anderson",
+            "gender": "Female",
+            "birthdate": "2016-01-01"
+        }
+    ]
+}
