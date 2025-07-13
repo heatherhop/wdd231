@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Directory Page</title>
+    <meta name="description" content="WDD 231 Chamber of Commerce Directory Page">
+    <meta name="author" content="Heather Hopkins">
+    <meta property="og:title" content="Hyrum City Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover the vital resources for local businesses, promoting economic growth, and connecting entrepreneurs for Hyrum residents. .">
+    <meta property="og:url" content="https://heatherhop.github.io/wdd231/chamber/directory.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image"
+        content="https://stateparks.utah.gov/wp-content/themes/stateparks/images/parks/hyrum/thumb.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 608px)">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/sunrise-over-mountains.svg" alt="site logo" width="24" height="24">
+        <span>Hyrum Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" type="button" aria-label="Open navigation menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="directory.html">HOME</a></li>
+            <li><a href="#">DIRECTORY</a></li>
+            <li><a href="#">JOIN</a></li>
+            <li><a href="#">DISCOVER</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 550px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Hyrum Dam State Park" width="400" height="200">
+            </picture>
+        </div>
+
+        <h1>HOME</h1>
+
+        <!-- <section class="info">
+            <div class="events" id="events">
+                <h2>EVENTS</h2>
+                <div></div>
+            </div>
+
+            <div class="weather" id="weather">
+                <h2>CURRENT WEATHER</h2>
+                <div></div>
+            </div>
+
+            <div class="forecast" id="forecast">
+                <h2>WEATHER FORECAST</h2>
+                <div></div>
+            </div>
+        </section> -->
+
+        <section>
+            <div>
+                <h2>MEMBERS</h2>
+                <button id="grid-Btn" class="gridButton" type="button" aria-label="Open grid menu"></button>
+            </div>
+            <div class="members" id="members"></div>
+
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="address">
+            <h4>Hyrum Chamber of Commerce</h4>
+            <p>50 Main Street</p>
+            <p>Tremonton, UT 84337</p>
+            <p>info@hyrumcc.org</p>
+            <p>(435) 224-0000</p>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img src="images/ic--baseline-facebook1.svg"
+                    alt="facebook logo" width="24" height="24"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/mdi--linkedin1.svg" alt="linkedin logo"
+                    width="24" height="24"></a>
+            <a href="https://x.com" target="_blank"><img src="images/line-md--twitter-x1.svg" alt="x twitter logo"
+                    width="24" height="24"></a>
+        </div>
+        <div class="timeInfo">
+            <p id="currentYear"><span></span></p>
+            <p id="lastModified"><span></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

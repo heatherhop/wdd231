@@ -2,8 +2,7 @@
 
     header,
     main,
-    nav,
-    footer {
+    footer, nav {
         max-width: 900px;
         margin: 0 auto;
     }
@@ -18,7 +17,7 @@
 
     .navigation {
         display: block;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid var(--primary-color);
     }
 
     .navigation ul {
@@ -29,19 +28,13 @@
         border: none;
     }
 
-    .grid {
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto auto;
+    .info {
+        display: flex;
     }
 
-    .section-three {
-        grid-column: 1/-1;
-        grid-row: 2;
+    .footer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
-    .courses {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-    }
 }
