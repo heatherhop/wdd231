@@ -181,6 +181,7 @@ section h2 {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
     max-width: 100%;
     height: auto;
+    aspect-ratio: 200 / 112;
 }
 
 .members.show {
