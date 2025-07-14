@@ -113,19 +113,6 @@ header span {
     object-fit: cover;
 }
 
-/* .info {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-}
-
-.info div {
-    border: 1px solid var(--primary-color);
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-} */
-
 .gridButton {
     border: 1px solid var(--primary-color);
     border-radius: 8px;
@@ -206,7 +193,7 @@ section h2 {
     align-items: center;
     text-align: center;
     border: 1px solid var(--primary-color);
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -222,12 +209,10 @@ section h2 {
 /* ************************* FOOTER *************************** */
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    display: grid;
     background-color: var(--primary-color);
     color: var(--accent-color);
-    padding: 20px;
+    padding: 15px;
     text-align: start;
 }
 
@@ -235,13 +220,19 @@ section h2 {
     font-size: 1.25rem;
 }
 
-.timeInfo p,
-.address p {
-    min-height: calc(.35rem * 5);
+.footer .timeInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 20px;
+}
+
+.timeInfo p,
+.address p {
+    min-height: auto;
     line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
 .social {
