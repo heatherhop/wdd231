@@ -26,11 +26,13 @@ const createMemberList = (members) => {
         business.textContent = `${member.business}`;
         date.innerHTML = `<strong>Member Since:</strong> ${member.memberSince}`;
         level.innerHTML = `<strong>Membership Level:</strong> ${member.membershipLevel}`;
-        businessImage.setAttribute("src", member.image);
+        businessImage.setAttribute("src", "images/place-holder.webp");
+
         businessImage.setAttribute("alt", `${member.business} logo`);
         businessImage.setAttribute("loading", "lazy");
         businessImage.setAttribute("width", "200");
         businessImage.setAttribute("height", "112");
+        businessImage.setAttribute("data-src", member.image);
         email.innerHTML = `<strong>Email:</strong> ${member.email}`;
         phone.innerHTML = `<strong>Phone:</strong> ${member.phone}`;
         url.innerHTML = `<strong>Website:</strong> ${member.website}`;
@@ -46,6 +48,33 @@ const createMemberList = (members) => {
         memberList.appendChild(memberCard)
     });
 }
+
+function lazyLoadImage(img) {
+    if (img.dataset.src) { // Check if data-src exists
+        img.src = img.dataset.src; // Swap the actual image
+        img.removeAttribute("data-src"); // Remove data-src once loaded
+        // Optional: Remove loading="lazy" if you don't want the browser to re-evaluate it
+        // img.removeAttribute("loading");
+    }
+}
+
+// Example of setting up the observer (integrate this into your script after image creation)
+const lazyLoadOptions = {
+    rootMargin: '0px 0px 100px 0px', // Load images when they are 100px from viewport
+    threshold: 0 // As soon as any part of the image is visible
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            lazyLoadImage(entry.target);
+            observer.unobserve(entry.target); // Stop observing once loaded
+        }
+    });
+}, lazyLoadOptions);
+
+// After creating each businessImage, add it to the observer
+observer.observe(businessImage);
 
 const gridBtn = document.querySelector('#grid-Btn');
 const memberGrid = document.querySelector('#members');
