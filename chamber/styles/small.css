@@ -181,6 +181,7 @@ section h2 {
     max-width: 100%;
     height: auto;
     aspect-ratio: 200 / 112;
+    display: none;
 }
 
 .members.show {
@@ -202,6 +203,7 @@ section h2 {
 }
 
 .members.show .memberCard img {
+    display: block;
     border-top: 1px solid var(--primary-color);
     margin-right: 0;
 }
