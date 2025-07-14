@@ -212,6 +212,8 @@ section h2 {
 
 .footer {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
     background-color: var(--primary-color);
     color: var(--accent-color);
     padding: 15px;
