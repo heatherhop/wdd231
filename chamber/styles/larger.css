@@ -2,7 +2,8 @@
 
     header,
     main,
-    footer, nav {
+    footer,
+    nav {
         max-width: 900px;
         margin: 0 auto;
     }
@@ -29,9 +30,15 @@
     }
 
     .footer {
-            display: grid;
-            /* grid-template-columns: 1fr 1fr 1fr; */
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        display: grid;
+        grid-template-columns: auto 150px auto;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    }
+
+    .footer .timeInfo,
+    .footer .address {
+        text-align: start;
     }
 
 }

@@ -216,34 +216,27 @@ section h2 {
     gap: 20px;
     background-color: var(--primary-color);
     color: var(--accent-color);
-    padding: 15px;
-    text-align: start;
+    padding: 20px;
+    text-align: center;
 }
 
 .footer h4 {
     font-size: 1.25rem;
 }
 
-.footer .timeInfo {
+.footer .timeInfo, footer .address {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
-}
-
-.timeInfo p,
-.address p {
     min-height: auto;
     line-height: 1.5rem;
-    margin: 0;
-    padding: 0;
 }
 
 .social {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 5px;
+    column-gap: 15px;
 }
 
 .social a {
