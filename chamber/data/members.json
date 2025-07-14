@@ -3,7 +3,7 @@
         {
             "business": "The Eatery",
             "memberSince": "2019",
-            "url": "https://www.alreporter.com/wp-content/uploads/2024/11/AdobeStock_513675449-scaled-e1732711866605-2048x1150.webp",
+            "image": "images/localBusiness.webp",
             "email": "info@gmail.com",
             "phone": "(435) 245-0882",
             "address1": "800 N Main Street",
@@ -14,7 +14,7 @@
         {
             "business": "The Depot, LLC",
             "memberSince": "2010",
-            "url": "https://www.alreporter.com/wp-content/uploads/2024/11/AdobeStock_513675449-scaled-e1732711866605-2048x1150.webp",
+            "image": "images/localBusiness.webp",
             "email": "info@gmail.com",
             "phone": "(435) 245-0002",
             "address1": "400 N 456 E",
@@ -25,7 +25,7 @@
         {
             "business": "Country Corner",
             "memberSince": "2018",
-            "url": "https://www.alreporter.com/wp-content/uploads/2024/11/AdobeStock_513675449-scaled-e1732711866605-2048x1150.webp",
+            "image": "images/localBusiness.webp",
             "email": "info@gmail.com",
             "phone": "(435) 245-8972",
             "address1": "400 N Center Street",
@@ -36,7 +36,7 @@
         {
             "business": "The Apple Station, LLC",
             "memberSince": "2024",
-            "url": "https://www.alreporter.com/wp-content/uploads/2024/11/AdobeStock_513675449-scaled-e1732711866605-2048x1150.webp",
+            "image": "images/localBusiness.webp",
             "email": "info@gmail.com",
             "phone": "(435) 245-4084",
             "address1": "360 N Scenic View",
@@ -47,7 +47,7 @@
         {
             "business": "Orion's Grocery",
             "memberSince": "2002",
-            "url": "https://www.alreporter.com/wp-content/uploads/2024/11/AdobeStock_513675449-scaled-e1732711866605-2048x1150.webp",
+            "image": "images/localBusiness.webp",
             "email": "info@gmail.com",
             "phone": "(435) 245-0707",
             "address1": "777 N Lane Ave",
@@ -58,7 +58,7 @@
         {
             "business": "Arctic Circle",
             "memberSince": "2024",
-            "url": "https://www.alreporter.com/wp-content/uploads/2024/11/AdobeStock_513675449-scaled-e1732711866605-2048x1150.webp",
+            "image": "images/localBusiness.webp",
             "email": "info@gmail.com",
             "phone": "(435) 245-9512",
             "address1": "963 N Center",
@@ -69,12 +69,34 @@
         {
             "business": "Maverick",
             "memberSince": "2017",
-            "url": "https://www.alreporter.com/wp-content/uploads/2024/11/AdobeStock_513675449-scaled-e1732711866605-2048x1150.webp",
+            "image": "images/localBusiness.webp",
             "email": "info@gmail.com",
             "phone": "(435) 245-0063",
             "address1": "50 S 200 W",
             "address2": "Hyrum, UT 84048",
             "website": "www.maverick.com",
+            "membershipLevel": "2"
+        },
+        {
+            "business": "Jan's Quilting",
+            "memberSince": "2019",
+            "image": "images/localBusiness.webp",
+            "email": "info@gmail.com",
+            "phone": "(435) 245-7863",
+            "address1": "25 S Panoramic Drive",
+            "address2": "Hyrum, UT 84048",
+            "website": "www.jquilts.com",
+            "membershipLevel": "1"
+        },
+        {
+            "business": "Monet's Pet Care",
+            "memberSince": "2014",
+            "image": "images/localBusiness.webp",
+            "email": "info@gmail.com",
+            "phone": "(435) 245-0108",
+            "address1": "514 Healing Lane",
+            "address2": "Hyrum, UT 84048",
+            "website": "www.monetspets.com",
             "membershipLevel": "2"
         }
     ]

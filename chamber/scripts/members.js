@@ -88,7 +88,7 @@ const createMemberList = (members) => {
         business.textContent = `${member.business}`;
         date.innerHTML = `<strong>Member Since:</strong> ${member.memberSince}`;
         level.innerHTML = `<strong>Membership Level:</strong> ${member.membershipLevel}`;
-        businessImage.setAttribute("src", member.url);
+        businessImage.setAttribute("src", member.image);
         businessImage.setAttribute("alt", `${member.business} logo`);
         businessImage.setAttribute("loading", "lazy");
         businessImage.setAttribute("width", "200");
