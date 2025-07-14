@@ -30,7 +30,7 @@ const createMemberList = (members) => {
         businessImage.setAttribute("alt", `${member.business} logo`);
         businessImage.setAttribute("loading", "lazy");
         businessImage.setAttribute("width", "200");
-        businessImage.setAttribute("height", "115");
+        businessImage.setAttribute("height", "112");
         email.innerHTML = `<strong>Email:</strong> ${member.email}`;
         phone.innerHTML = `<strong>Phone:</strong> ${member.phone}`;
         url.innerHTML = `<strong>Website:</strong> ${member.website}`;
