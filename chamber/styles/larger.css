@@ -28,10 +28,6 @@
         border: none;
     }
 
-    .info {
-        display: flex;
-    }
-
     .footer {
             display: grid;
             /* grid-template-columns: 1fr 1fr 1fr; */
