@@ -1,21 +1,23 @@
 const file = 'data/members.json';
 const memberList = document.querySelector("#members");
 
-async function getMemberData() {
+export async function getMemberData() {
     const response = await fetch(file);
     const data = await response.json();
-    createMemberList(data.members);
-}
+    return data.members;
+    // createMemberList(data.members);
+};
 
-getMemberData();
+// getMemberData();
 
-const createMemberList = (members) => {
+export const createMemberList = (members, container) => {
 
-    // memberList.innerHTML = "";
+    container.innerHTML = "";
+
     members.forEach(member => {
         let memberCard = document.createElement("section");
         memberCard.classList.add("memberCard");
-        let business = document.createElement("h3");
+        let business = document.createElement("h2");
         let date = document.createElement("p");
         let level = document.createElement("p");
         let businessImage = document.createElement("img");
@@ -23,7 +25,7 @@ const createMemberList = (members) => {
         let phone = document.createElement("p");
         let url = document.createElement("p");
 
-        business.textContent = `${member.business}`;
+        business.innerHTML = `${member.business}`;
         date.innerHTML = `<strong>Member Since:</strong> ${member.memberSince}`;
         level.innerHTML = `<strong>Membership Level:</strong> ${member.membershipLevel}`;
         businessImage.setAttribute("src", member.image);
@@ -33,7 +35,7 @@ const createMemberList = (members) => {
         businessImage.setAttribute("height", "112");
         email.innerHTML = `<strong>Email:</strong> ${member.email}`;
         phone.innerHTML = `<strong>Phone:</strong> ${member.phone}`;
-        url.innerHTML = `<strong>Website:</strong> ${member.website}`;
+        url.innerHTML = `<strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a>`;
 
         memberCard.appendChild(business);
         memberCard.appendChild(date);
@@ -43,14 +45,24 @@ const createMemberList = (members) => {
         memberCard.appendChild(phone);
         memberCard.appendChild(url);
 
-        memberList.appendChild(memberCard)
+        container.appendChild(memberCard);
     });
 }
+
+document.addEventListener('DOMContentLoaded', async () => {
+    if (memberList) {
+        const members = await getMemberData();
+        createMemberList(members, memberList);
+    }
+});
+
 
 const gridBtn = document.querySelector('#grid-Btn');
 const memberGrid = document.querySelector('#members');
 
-gridBtn.addEventListener('click', () => {
-    gridBtn.classList.toggle('show');
-    memberGrid.classList.toggle('show');
-});
+if (gridBtn && memberGrid) {
+    gridBtn.addEventListener('click', () => {
+        gridBtn.classList.toggle('show');
+        memberGrid.classList.toggle('show');
+    });
+}

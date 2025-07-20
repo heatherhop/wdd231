@@ -17,9 +17,12 @@
 }
 
 h1 {
-    color: var(--primary-color);
-    margin: 10px;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     font-family: var(--font-family);
+    padding: 8px;
+    font-size: 1.6rem;
+    padding-left: 15px;
 }
 
 h2 {
@@ -50,9 +53,6 @@ header span {
     color: var(--primary-color);
     font-size: 1.4rem;
 }
-
-
-
 
 /* ************************* NAVIGATION ************************ */
 
@@ -116,7 +116,6 @@ header span {
     border: 1px solid var(--primary-color);
     border-radius: 8px;
     padding: 5px;
-    margin: 10px;
     color: var(--primary-color);
     font-size: .7rem;
     cursor: pointer;
@@ -127,7 +126,6 @@ header span {
     background-color: rgba(225, 223, 153, 0.3);
     transition: transform 0.2s ease-in-out;
     font-size: 0.75rem;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .gridButton::before {
@@ -138,12 +136,84 @@ header span {
     content: "List View";
 }
 
-section h2 {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
-    font-family: var(--font-family);
+.join {
+    display: flex;
+    flex-direction: column;
 }
 
+.join p {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding: 20px;
+    text-align: center;  
+}
+
+.join-btn {
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 1.6rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 6px;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: rgba(225, 223, 153, 0.3);
+}
+
+.join-btn:hover {
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.7rem;
+}
+
+.homeInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.homeInfo section {
+border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.homeInfo section h2 {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-family: var(--font-family);
+    margin-bottom: 8px;
+}
+
+.homeInfo p {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin-left: 8px;
+    padding: 2px;
+    font-family: var(--font-family2);
+}
+
+.weather {
+    position: relative;
+}
+
+.weather img {
+    position: absolute;
+    top: 45px;
+    right: 0px;
+}
+
+.spotlight {
+    margin-top: 40px;
+    border-top: 1px solid var(--primary-color);
+    text-align: center;
+}
 .members {
     display: flex;
     flex-direction: column;
@@ -151,14 +221,15 @@ section h2 {
     padding: 10px;
 }
 
-.memberCard h3 {
+.memberCard h2 {
     width: 220px;
     text-align: center;
     background-color: var(--primary-color);
     color: var(--accent-color);
-    padding: 10px;
+    padding: 6px;
     border-radius: 8px;
     font-family: var(--font-family);
+    margin-bottom: 10px;
 }
 
 .memberCard {
@@ -198,7 +269,7 @@ section h2 {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.members.show .memberCard h3 {
+.members.show .memberCard h2 {
     width: 100%;
 }
 
@@ -220,11 +291,12 @@ section h2 {
     text-align: center;
 }
 
-.footer h4 {
+.footer h3 {
     font-size: 1.25rem;
 }
 
-.footer .timeInfo, footer .address {
+.footer .timeInfo,
+footer .address {
     display: flex;
     flex-direction: column;
     justify-content: center;

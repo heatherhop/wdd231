@@ -9,7 +9,7 @@
             "address1": "800 N Main Street",
             "address2": "Hyrum, UT 84048",
             "website": "www.theeatery.com",
-            "membershipLevel": "3"
+            "membershipLevel": "Bronze"
         },
         {
             "business": "The Depot, LLC",
@@ -20,7 +20,7 @@
             "address1": "400 N 456 E",
             "address2": "Hyrum, UT 84048",
             "website": "www.thedepot.com",
-            "membershipLevel": "1"
+            "membershipLevel": "Gold"
         },
         {
             "business": "Country Corner",
@@ -31,7 +31,7 @@
             "address1": "400 N Center Street",
             "address2": "Hyrum, UT 84048",
             "website": "www.countrycorner.com",
-            "membershipLevel": "2"
+            "membershipLevel": "Silver"
         },
         {
             "business": "The Apple Station, LLC",
@@ -42,7 +42,7 @@
             "address1": "360 N Scenic View",
             "address2": "Hyrum, UT 84048",
             "website": "www.theapple.com",
-            "membershipLevel": "2"
+            "membershipLevel": "Silver"
         },
         {
             "business": "Orion's Grocery",
@@ -53,7 +53,7 @@
             "address1": "777 N Lane Ave",
             "address2": "Hyrum, UT 84048",
             "website": "www.orionsgrocery.com",
-            "membershipLevel": "3"
+            "membershipLevel": "Bronze"
         },
         {
             "business": "Arctic Circle",
@@ -64,7 +64,7 @@
             "address1": "963 N Center",
             "address2": "Hyrum, UT 84048",
             "website": "www.arctic-circle.com",
-            "membershipLevel": "1"
+            "membershipLevel": "Gold"
         },
         {
             "business": "Maverick",
@@ -75,7 +75,7 @@
             "address1": "50 S 200 W",
             "address2": "Hyrum, UT 84048",
             "website": "www.maverick.com",
-            "membershipLevel": "2"
+            "membershipLevel": "Silver"
         },
         {
             "business": "Jan's Quilting",
@@ -86,7 +86,7 @@
             "address1": "25 S Panoramic Drive",
             "address2": "Hyrum, UT 84048",
             "website": "www.jquilts.com",
-            "membershipLevel": "1"
+            "membershipLevel": "Bronze"
         },
         {
             "business": "Monet's Pet Care",
@@ -97,7 +97,7 @@
             "address1": "514 Healing Lane",
             "address2": "Hyrum, UT 84048",
             "website": "www.monetspets.com",
-            "membershipLevel": "2"
+            "membershipLevel": "Silver"
         }
     ]
 }

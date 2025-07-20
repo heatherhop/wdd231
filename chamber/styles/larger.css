@@ -29,11 +29,13 @@
         border: none;
     }
 
+    .homeInfo{
+        grid-template-columns: minmax(250px, 2fr) minmax(120px, 1fr) minmax(120px, 1fr);
+    }
+
     .footer {
         display: grid;
-        grid-template-columns: auto 150px auto;
-        /* grid-template-columns: 1fr 1fr 1fr; */
-        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+        grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
     }
 
     .footer .timeInfo,

@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyrum City Chamber Directory Page</title>
-    <meta name="description" content="WDD 231 Chamber of Commerce Directory Page">
+    <title>Hyrum City Chamber Home Page</title>
+    <meta name="description" content="WDD 231 Chamber of Commerce Home Page">
     <meta name="author" content="Heather Hopkins">
     <meta property="og:title" content="Hyrum City Chamber of Commerce">
     <meta property="og:description"
         content="Discover the vital resources for local businesses, promoting economic growth, and connecting entrepreneurs for Hyrum residents. .">
-    <meta property="og:url" content="https://heatherhop.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://heatherhop.github.io/wdd231/chamber/index.html">
     <meta property="og:locale" content="en_US">
     <meta property="og:image"
         content="https://stateparks.utah.gov/wp-content/themes/stateparks/images/parks/hyrum/thumb.jpg">
@@ -21,9 +21,10 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 608px)">
-    <script type="module" src="scripts/date.mjs" ></script>
-    <script type="module" src="scripts/navigation.mjs" defer></script>
-    <script type="module" src="scripts/members.mjs" defer></script>
+    <script type="module" src="scripts/date.mjs"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
+    <script type="module" src="scripts/weather.mjs"></script>
+    <script type="module" src="scripts/spotlight.mjs"></script>
 </head>
 
 <body>
@@ -41,13 +42,45 @@
         </ul>
     </nav>
     <main>
-        <h1>CHAMBER MEMBERS</h1>
-        <section>
-            <div>
-                <button id="grid-Btn" class="gridButton" type="button" aria-label="Open grid menu"></button>
-            </div>
-            <div class="members" id="members"></div>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 550px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Hyrum Dam State Park" width="400" height="200">
+            </picture>
+        </div>
 
+        <h1>HOME</h1>
+        <div class="join">
+            <p>Connect with local leaders, expand your network, and access exclusive resources. Become a part of
+                something bigger!</p>
+            <a href="#" class="join-btn">Join Now</a>
+        </div>
+
+        <div class="homeInfo" id="homeInfo">
+
+            <section class="events" id="events">
+                <h2>Upcoming Events</h2>
+                <p>• July 28 - Grand Opening, The French Door Cafe</p>
+                <p>• July 29 - Small Business Office Hours</p>
+                <p>• August 4 - Ribbon Cutting, Cache County Primary</p>
+                <p>• August 11 - Saturday Business Breakfast</p>
+                <p>• August 13 - Business Resource Committeee</p>
+            </section>
+
+            <section class="weather" id="weather">
+                <h2>Current Weather</h2>
+            </section>
+
+            <section class="forecast" id="forecast">
+                <h2>Forecast</h2>
+            </section>
+
+        </div>
+
+        <section class="spotlight">
+            <h2>Member Spotlight</h2>
+            <div class="members" id="spotlight"></div>
         </section>
 
     </main>
