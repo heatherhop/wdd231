@@ -177,6 +177,32 @@ a {
     margin-left: 3px;
 }
 
+/* ************************* DIALOG BOX *************************** */
+
+dialog {
+    margin: auto;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+}
+
 /* ************************ FOOTER *************************** */
 
 footer {

@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyrum City Chamber Directory Page</title>
-    <meta name="description" content="WDD 231 Chamber of Commerce Directory Page">
+    <title>Hyrum City Chamber Join Page</title>
+    <meta name="description" content="WDD 231 Chamber of Commerce Join Page">
     <meta name="author" content="Heather Hopkins">
     <meta property="og:title" content="Hyrum City Chamber of Commerce">
     <meta property="og:description"
         content="Discover the vital resources for local businesses, promoting economic growth, and connecting entrepreneurs for Hyrum residents. .">
-    <meta property="og:url" content="https://heatherhop.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://heatherhop.github.io/wdd231/chamber/index.html">
     <meta property="og:locale" content="en_US">
     <meta property="og:image"
         content="https://stateparks.utah.gov/wp-content/themes/stateparks/images/parks/hyrum/thumb.jpg">
@@ -21,9 +21,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 608px)">
-    <script type="module" src="scripts/date.mjs" ></script>
-    <script type="module" src="scripts/navigation.mjs" defer></script>
-    <script type="module" src="scripts/members.mjs" defer></script>
+    <script type="module" src="scripts/date.mjs"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
 </head>
 
 <body>
@@ -41,14 +40,37 @@
         </ul>
     </nav>
     <main>
-        <h1>CHAMBER MEMBERS</h1>
-        <section>
-            <div>
-                <button id="grid-Btn" class="gridButton" type="button" aria-label="Open grid menu"></button>
-            </div>
-            <div class="members" id="members"></div>
+        <h1>Join</h1>
 
-        </section>
+        <h2>Membership Application Form</h2>
+        <form method="get" action="thankyou.html" class="formDesign">
+            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="First Name"
+                    placeholder="First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Last Name"
+                    placeholder="Last Name"></label>
+            <label>Title <input type="text" name="title" autocomplete="organization-title"
+                    title="Your Organization Title"></label>
+            <label>Organization <input type="text" name="organization" required autocomplete="organization"
+                    title="Your Organization"></label>
+            <label>Email <input type="email" name="email" required autocomplete="email" title="Your email address"
+                    placeholder="emailaddress@email.com"></label>
+            <label>Cell Phone <input type="tel" name="phone" autocomplete="tel"
+                    title="A phone number with parenthesis and dashes" placeholder="(123)456-7890"></label>
+            <label>Business Description <input type="text" name="description"
+                    title="Your organization description"></label>
+
+            <h3>Membership Level</h3>
+            <label><input type="radio" name="membership level" value="Non-Profit"> Non-Profit Membership Level</label>
+            <label><input type="radio" name="membership level" value="Bronze"> Bronze Membership Level</label>
+            <label><input type="radio" name="membership level" value="Silver"> Silver Membership Level</label>
+            <label><input type="radio" name="membership level" value="Gold" checked> Gold Membership Level</label>
+
+            <input type="submit" value="Join the Chamber">
+
+        </form>
+        <h2>Membership Levels</h2>
+        <section class="levelCards" id="levelCards"></section>
+
 
     </main>
     <footer class="footer">

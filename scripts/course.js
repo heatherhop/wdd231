@@ -91,12 +91,15 @@ function createCourseList(courses) {
         if (course.completed === true) {
             item.classList.add('completed');
             let checkmarkSpan = document.createElement("span");
-            checkmarkSpan.classList.add('checkmark'); 
+            checkmarkSpan.classList.add('checkmark');
             checkmarkSpan.innerHTML = '&#10003;';
             item.appendChild(checkmarkSpan);
+            item.addEventListener("click", () => {
+                showCourseDetails(course);
+            });
         }
-    });
-}
+    })
+};
 
 function calcTotalCredits(courses) {
     return courses.reduce((accumulator, currentCourse) => {
@@ -136,3 +139,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const initialTotal = calcTotalCredits(courses);
     totalDisplay.innerHTML = `The total credits for courses listed above is ${initialTotal}`;
 });
+
+const modal = document.getElementById("course-details");
+
+function showCourseDetails(course) {
+    modal.innerHTML = '';
+    modal.innerHTML = `
+    <button class="close-modal-button">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology}</p>
+    `;
+    modal.showModal();
+    const closeModal = document.querySelector('.close-modal-button');
+    closeModal.addEventListener("click", () => {
+        modal.close();
+    });
+}
