@@ -15,8 +15,7 @@
     <meta property="og:image"
         content="https://stateparks.utah.gov/wp-content/themes/stateparks/images/parks/hyrum/thumb.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="htt
-    ps://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -59,21 +58,22 @@
                             title="Your email address" placeholder="emailaddress@email.com"></label>
                     <label>Cell Phone <input type="tel" name="phone" autocomplete="tel"
                             title="A phone number with dashes" placeholder="123-456-7890"></label>
-                    <label>Business Description <textarea type="text" name="description"
-                            title="Your organization description" rows="4" cols="30"></textarea></label>
-
-                    <h3>Membership Level</h3>
-                    <div class="radio">
-                        <label><input type="radio" name="membership-level" value="Non-Profit" checked> Non-Profit Membership
-                            Level</label>
-                        <label><input type="radio" name="membership-level" value="Bronze"> Bronze Membership
-                            Level</label>
-                        <label><input type="radio" name="membership-level" value="Silver"> Silver Membership
-                            Level</label>
-                        <label><input type="radio" name="membership-level" value="Gold"> Gold Membership
-                            Level</label>
-                    </div>
-
+                    <label>Business Description <textarea name="description" title="Your organization description"
+                            rows="4" cols="30"></textarea></label>
+                    <fieldset>
+                        <legend>Membership Level</legend>
+                        <div class="radio">
+                            <label><input type="radio" name="membership-level" value="Non-Profit" checked> Non-Profit
+                                Membership
+                                Level</label>
+                            <label><input type="radio" name="membership-level" value="Bronze"> Bronze Membership
+                                Level</label>
+                            <label><input type="radio" name="membership-level" value="Silver"> Silver Membership
+                                Level</label>
+                            <label><input type="radio" name="membership-level" value="Gold"> Gold Membership
+                                Level</label>
+                        </div>
+                    </fieldset>
 
                     <button class="submit-btn" type="submit" value="Join the Chamber">Join the Chamber</button>
 

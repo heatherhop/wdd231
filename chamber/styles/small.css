@@ -306,6 +306,16 @@ header span {
     color: var(--primary-color)
 }
 
+fieldset {
+    border: none;
+    margin-top: 10px;
+}
+
+legend {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
 .radio {
     display: flex;
     flex-wrap: wrap;
@@ -405,10 +415,12 @@ textarea {
     font-size: 1.5rem;
 }
 
-#level-details p, h3 {
+#level-details p,
+h3 {
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
+
 ::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
 }
