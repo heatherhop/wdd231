@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <ul>
 <li><strong>Membership Level:</strong> <span class="result">${myMembershipResults.get("membership-level")}</span></li>
 <li><strong>Name:</strong> <span class="result">${myMembershipResults.get("first")} ${myMembershipResults.get("last")}</span></li>
-<li><strong>Title:</strong> <span class="result">${myMembershipResults.get("title")}</span></li>
+<li><strong>Organization Title:</strong> <span class="result">${myMembershipResults.get("title")}</span></li>
 <li><strong>Organization:</strong> <span class="result">${myMembershipResults.get("organization")}</span></li>
 <li><strong>Phone:</strong> <span class="result">${myMembershipResults.get("phone")}</span></li>
 <li><strong>Email:</strong> <span class="result">${myMembershipResults.get("email")}</span></li>

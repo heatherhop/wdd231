@@ -370,6 +370,18 @@ textarea {
     width: 90%;
     justify-self: center;
     margin-bottom: 20px;
+    animation: fadeInAndUp .7s ease-in;
+}
+
+@keyframes fadeInAndUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 .levelCards h3 {
