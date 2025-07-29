@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     const queryString = window.location.search;
     const myMembershipResults = new URLSearchParams(queryString);
 
@@ -11,13 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
 <p>Here are your membership details:</p>
 <br>
 <ul>
-<li><strong>Membership Level:</strong> <span class="result">${myMembershipResults.get("membership-level")}</span></p>
-<li><strong>Name:</strong> <span class="result">${myMembershipResults.get("first")} ${myMembershipResults.get("last")}</span></p>
-<li><strong>Title:</strong> <span class="result">${myMembershipResults.get("title")}</span></p>
-<li><strong>Organization:</strong> <span class="result">${myMembershipResults.get("organization")}</span></p>
-<li><strong>Phone:</strong> <span class="result">${myMembershipResults.get("phone")}</span></p>
-<li><strong>Email:</strong> <span class="result">${myMembershipResults.get("email")}</span></p>
-<li><strong>Your Business Description:</strong> <span class="result">${myMembershipResults.get("description")}</span></p>
+<li><strong>Membership Level:</strong> <span class="result">${myMembershipResults.get("membership-level")}</span></li>
+<li><strong>Name:</strong> <span class="result">${myMembershipResults.get("first")} ${myMembershipResults.get("last")}</span></li>
+<li><strong>Title:</strong> <span class="result">${myMembershipResults.get("title")}</span></li>
+<li><strong>Organization:</strong> <span class="result">${myMembershipResults.get("organization")}</span></li>
+<li><strong>Phone:</strong> <span class="result">${myMembershipResults.get("phone")}</span></li>
+<li><strong>Email:</strong> <span class="result">${myMembershipResults.get("email")}</span></li>
+<li><strong>Your Business Description:</strong> <span class="result">${myMembershipResults.get("description")}</span></li>
+<li><strong>Submission Timestamp:</strong> <span class="result">${new Date(myMembershipResults.get("timestamp")).toLocaleDateString()} ${new Date(myMembershipResults.get("timestamp")).toLocaleTimeString()}</span></li>
 </ul>
 <br>
 <p> We'll be in touch with your shortly to finalize your membership and welcome you aboard!</p>

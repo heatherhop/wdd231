@@ -1,8 +1,8 @@
 const membershipLevels = [
     {
         level: 'Non-Profit Membership Level',
-        description: 'This special membership is for non-profit organizations. We know you do important work for our community, so this level offers all the basic benefits at a lower cost. You will get to network, be listed in our directory, and get support for your mission',
-        fee: '$35 Annual Membership'
+        description: 'This special membership is for non-profit organizations. We know you do important work for our community, so this level offers all the basic benefits at no cost. You will get to network, be listed in our directory, and get support for your mission',
+        fee: 'Free Annual Membership'
     },
     {
         level: 'Bronze Membership Level',
@@ -55,7 +55,7 @@ function createMembershipCard(membershipLevels) {
             <p>${level.fee}</p>
             `;
             modal.showModal();
-            
+
             const closeModal = document.querySelector('.close-modal-button');
             if (closeModal) {
                 closeModal.addEventListener("click", () => {
