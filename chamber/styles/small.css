@@ -145,7 +145,7 @@ header span {
     font-size: 1.5rem;
     color: var(--primary-color);
     padding: 20px;
-    text-align: center;  
+    text-align: center;
 }
 
 .join-btn {
@@ -173,7 +173,7 @@ header span {
 }
 
 .homeInfo section {
-border: 1px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 4px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     margin: 10px;
@@ -214,6 +214,7 @@ border: 1px solid var(--primary-color);
     border-top: 1px solid var(--primary-color);
     text-align: center;
 }
+
 .members {
     display: flex;
     flex-direction: column;
@@ -278,6 +279,185 @@ border: 1px solid var(--primary-color);
     border-top: 1px solid var(--primary-color);
     margin-right: 0;
 }
+
+/* ************************* Join page *************************** */
+
+.grid-container {
+    display: block;
+    padding: 20px;
+}
+
+.grid-container section.join {
+    margin-bottom: 20px;
+}
+
+.grid-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.join {
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.join h3 {
+    margin-top: 12px;
+    color: var(--primary-color)
+}
+
+.radio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2px;
+}
+
+.radio label {
+    display: flex;
+    align-items: center;
+    margin: 2px;
+}
+
+.submit-btn {
+    align-self: center;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 15px auto;
+    padding: 4px;
+}
+
+.submit-btn:hover {
+
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.05rem;
+}
+
+.formDesign label,
+input:not([type="radio"]),
+textarea {
+    display: block;
+    padding: 3px;
+    margin-left: 10px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.levelCards {
+    line-height: 16px;
+}
+
+.levelCards li {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+.levelCards h3 {
+    padding: 3px;
+    color: var(--primary-color);
+
+}
+
+.levelCards p {
+    font-size: 16px;
+    color: black;
+}
+
+.levelCards button {
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 8px;
+}
+
+.levelCards button:hover {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.05rem;
+}
+
+#level-details {
+    width: 80%;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#level-details button {
+    position: absolute;
+    right: 20px;
+}
+
+#level-details h3 {
+    font-size: 1.5rem;
+}
+
+#level-details p, h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ************************* Thank You page *************************** */
+
+.results {
+    color: var(--primary-color);
+
+}
+
+.results p {
+    text-align: center;
+    margin-bottom: 4px;
+    /* font-size: 1.2rem; */
+
+}
+
+.thankyou {
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.results ul li {
+    list-style: none;
+    margin-left: 30px;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+.result {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.1rem;
+}
+
+.results a {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.results a:hover {
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.03rem;
+    text-decoration: underline;
+}
+
 /* ************************* FOOTER *************************** */
 
 .footer {

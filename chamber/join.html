@@ -15,7 +15,8 @@
     <meta property="og:image"
         content="https://stateparks.utah.gov/wp-content/themes/stateparks/images/parks/hyrum/thumb.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="htt
+    ps://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -23,6 +24,7 @@
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 608px)">
     <script type="module" src="scripts/date.mjs"></script>
     <script type="module" src="scripts/navigation.mjs"></script>
+    <script src="scripts/membership.js" defer></script>
 </head>
 
 <body>
@@ -41,37 +43,48 @@
     </nav>
     <main>
         <h1>Join</h1>
+        <div class="grid-container">
+            <section class="join">
+                <h2>Membership Application Form</h2>
+                <form method="get" action="thankyou.html" class="formDesign">
+                    <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                            title="First Name"></label>
+                    <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                            title="Last Name"></label>
+                    <label>Title <input type="text" name="title" autocomplete="organization-title"
+                            title="Your Organization Title"></label>
+                    <label>Organization <input type="text" name="organization" required autocomplete="organization"
+                            title="Your Organization"></label>
+                    <label>Email <input type="email" name="email" required autocomplete="email"
+                            title="Your email address" placeholder="emailaddress@email.com"></label>
+                    <label>Cell Phone <input type="tel" name="phone" autocomplete="tel"
+                            title="A phone number with dashes" placeholder="123-456-7890"></label>
+                    <label>Business Description <textarea type="text" name="description"
+                            title="Your organization description" rows="4" cols="30"></textarea></label>
 
-        <h2>Membership Application Form</h2>
-        <form method="get" action="thankyou.html" class="formDesign">
-            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="First Name"
-                    placeholder="First Name"></label>
-            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Last Name"
-                    placeholder="Last Name"></label>
-            <label>Title <input type="text" name="title" autocomplete="organization-title"
-                    title="Your Organization Title"></label>
-            <label>Organization <input type="text" name="organization" required autocomplete="organization"
-                    title="Your Organization"></label>
-            <label>Email <input type="email" name="email" required autocomplete="email" title="Your email address"
-                    placeholder="emailaddress@email.com"></label>
-            <label>Cell Phone <input type="tel" name="phone" autocomplete="tel"
-                    title="A phone number with parenthesis and dashes" placeholder="(123)456-7890"></label>
-            <label>Business Description <input type="text" name="description"
-                    title="Your organization description"></label>
-
-            <h3>Membership Level</h3>
-            <label><input type="radio" name="membership level" value="Non-Profit"> Non-Profit Membership Level</label>
-            <label><input type="radio" name="membership level" value="Bronze"> Bronze Membership Level</label>
-            <label><input type="radio" name="membership level" value="Silver"> Silver Membership Level</label>
-            <label><input type="radio" name="membership level" value="Gold" checked> Gold Membership Level</label>
-
-            <input type="submit" value="Join the Chamber">
-
-        </form>
-        <h2>Membership Levels</h2>
-        <section class="levelCards" id="levelCards"></section>
+                    <h3>Membership Level</h3>
+                    <div class="radio">
+                        <label><input type="radio" name="membership-level" value="Non-Profit" checked> Non-Profit Membership
+                            Level</label>
+                        <label><input type="radio" name="membership-level" value="Bronze"> Bronze Membership
+                            Level</label>
+                        <label><input type="radio" name="membership-level" value="Silver"> Silver Membership
+                            Level</label>
+                        <label><input type="radio" name="membership-level" value="Gold"> Gold Membership
+                            Level</label>
+                    </div>
 
 
+                    <button class="submit-btn" type="submit" value="Join the Chamber">Join the Chamber</button>
+
+                </form>
+            </section>
+            <section class="join">
+                <h2>Membership Levels</h2>
+                <ul class="levelCards" id="levelCards"></ul>
+                <dialog id="level-details"></dialog>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="address">

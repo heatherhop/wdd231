@@ -4,27 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber site Join Thank You Page">
+    <title>Hyrum City Chamber Join Page</title>
+    <meta name="description" content="WDD 231 Chamber of Commerce Join Page">
     <meta name="author" content="Heather Hopkins">
-
+    <meta property="og:title" content="Hyrum City Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover the vital resources for local businesses, promoting economic growth, and connecting entrepreneurs for Hyrum residents. .">
+    <meta property="og:url" content="https://heatherhop.github.io/wdd231/chamber/index.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image"
+        content="https://stateparks.utah.gov/wp-content/themes/stateparks/images/parks/hyrum/thumb.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
-
-    <title>Web Lab Start File</title>
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 608px)">
+    <script type="module" src="scripts/date.mjs"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
-
+    <header>
+        <img src="images/sunrise-mtns.svg" alt="site logo" width="24" height="24">
+        <span>Hyrum Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" type="button" aria-label="Open navigation menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">HOME</a></li>
+            <li><a href="directory.html">DIRECTORY</a></li>
+            <li><a href="join.html">JOIN</a></li>
+            <li><a href="#">DISCOVER</a></li>
+        </ul>
+    </nav>
+    
     <main>
-        <h1>Temple Appointment Details</h1>
-
-        <div id="results"></div>
-
+        <h1>Chamber Membership Details</h1>
+    
+        <div id="results" class="results"></div>
+    
     </main>
 
-
-
-    <script src="js/scripts.js"></script>
+    <footer class="footer">
+        <div class="address">
+            <h3>Hyrum Chamber of Commerce</h3>
+            <p>50 Main Street</p>
+            <p>Hyrum, UT 84337</p>
+            <p>info@hyrumcc.org</p>
+            <p>(435) 224-0000</p>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img src="images/ic-facebook.svg" alt="facebook logo"
+                    width="24" height="24"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/mdi--linkedin1.svg" alt="linkedin logo"
+                    width="24" height="24"></a>
+            <a href="https://x.com" target="_blank"><img src="images/line-md--twitter-x1.svg" alt="x twitter logo"
+                    width="24" height="24"></a>
+        </div>
+        <div class="timeInfo">
+            <p id="currentYear"><span></span></p>
+            <p id="lastModified"><span></span></p>
+        </div>
+    </footer>
 </body>
 
 </html>

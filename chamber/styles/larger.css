@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 700px) {
 
     header,
     main,
@@ -29,8 +29,17 @@
         border: none;
     }
 
-    .homeInfo{
+    .homeInfo {
         grid-template-columns: minmax(250px, 2fr) minmax(120px, 1fr) minmax(120px, 1fr);
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #level-details {
+        width: 40%;
     }
 
     .footer {
