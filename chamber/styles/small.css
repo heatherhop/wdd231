@@ -45,8 +45,8 @@ header {
 
 header img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 24px;
+    height: 24px;
 }
 
 header span {
@@ -486,7 +486,7 @@ h3 {
 
 /* ************************* Discover Page ************************ */
 
-#visit-info{
+#visit-info {
     background-color: var(--accent-color);
     border: 1px solid var(--primary-color);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
@@ -514,11 +514,11 @@ h3 {
     overflow: hidden;
 
     display: grid;
-    grid-template-areas: 
-    "name"
-    "photograph"
-    "description"
-    "address";
+    grid-template-areas:
+        "name"
+        "photograph"
+        "description"
+        "address";
 }
 
 .areaCard h2 {
