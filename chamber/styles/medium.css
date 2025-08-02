@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 38rem) {
 
     header,
     main,
@@ -54,19 +54,12 @@
 
     .areaCard {
         grid-template-areas:
-            "name"
-            "photograph"
-            "description"
-            "address";
+            "photograph name"
+            "photograph description"
+            "photograph address";
     }
 
-    .areacard img {
+    .areas img {
         width: 300px;
     }
-
-    .areas {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
 }

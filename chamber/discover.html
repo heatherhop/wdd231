@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyrum City Chamber Home Page</title>
-    <meta name="description" content="WDD 231 Chamber of Commerce Home Page">
+    <title>Hyrum City Chamber Discover Page</title>
+    <meta name="description" content="WDD 231 Chamber of Commerce Discover Page">
     <meta name="author" content="Heather Hopkins">
     <meta property="og:title" content="Hyrum City Chamber of Commerce">
     <meta property="og:description"
@@ -20,11 +20,11 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 608px)">
     <script type="module" src="scripts/date.mjs"></script>
     <script type="module" src="scripts/navigation.mjs"></script>
-    <script type="module" src="scripts/weather.mjs"></script>
-    <script type="module" src="scripts/spotlight.mjs"></script>
+    <script type="module" src="scripts/areas.js"></script>
 </head>
 
 <body>
@@ -35,54 +35,15 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="index.html">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="directory.html">DIRECTORY</a></li>
             <li><a href="join.html">JOIN</a></li>
-            <li><a href="discover.html">DISCOVER</a></li>
+            <li class="current"><a href="discover.html">DISCOVER</a></li>
         </ul>
     </nav>
     <main>
-        <div class="hero">
-            <picture>
-                <source media="(min-width: 900px)" srcset="images/hero-large.webp">
-                <source media="(min-width: 550px)" srcset="images/hero-medium.webp">
-                <img src="images/hero-small.webp" alt="Hyrum Dam State Park" width="400" height="200">
-            </picture>
-        </div>
-
-        <h1>HOME</h1>
-        <div class="join">
-            <p>Connect with local leaders, expand your network, and access exclusive resources. Become a part of
-                something bigger!</p>
-            <a href="join.html" class="join-btn">Join Now</a>
-        </div>
-
-        <div class="homeInfo" id="homeInfo">
-
-            <section class="events" id="events">
-                <h2>Upcoming Events</h2>
-                <p>• July 28 - Grand Opening, The French Door Cafe</p>
-                <p>• July 29 - Small Business Office Hours</p>
-                <p>• August 4 - Ribbon Cutting, Cache County Primary</p>
-                <p>• August 11 - Saturday Business Breakfast</p>
-                <p>• August 13 - Business Resource Committeee</p>
-            </section>
-
-            <section class="weather" id="weather">
-                <h2>Current Weather</h2>
-            </section>
-
-            <section class="forecast" id="forecast">
-                <h2>Forecast</h2>
-            </section>
-
-        </div>
-
-        <section class="spotlight">
-            <h2>Member Spotlight</h2>
-            <div class="members" id="spotlight"></div>
-        </section>
-
+        <h1>Discover Hyrum</h1>
+        <div class="areas" id="areas-container"></div>
     </main>
     <footer class="footer">
         <div class="address">
