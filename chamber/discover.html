@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 608px)">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 1024px)">
     <script type="module" src="scripts/date.mjs"></script>
     <script type="module" src="scripts/navigation.mjs"></script>
-    <script type="module" src="scripts/areas.js"></script>
+    <script src="scripts/areas.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
 </head>
 
 <body>
@@ -43,7 +44,13 @@
     </nav>
     <main>
         <h1>Discover Hyrum</h1>
+        <div>
+            <aside id="visit-info">
+                <span class="visit-message"></span>
+            </aside>
+        </div>
         <div class="areas" id="areas-container"></div>
+
     </main>
     <footer class="footer">
         <div class="address">

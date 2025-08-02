@@ -61,5 +61,11 @@
 
     .areas img {
         width: 300px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .areas img:hover {       
+        transform: scale(1.1);
+        box-shadow: 0 0 10px #0f0f0f;
     }
 }
