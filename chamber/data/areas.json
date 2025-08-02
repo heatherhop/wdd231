@@ -34,19 +34,19 @@
             "areaName": "Blacksmith Fork Park",
             "areaAddress": "176 S 1300 E",
             "areaDescription": "Blacksmith Fork Park includes a pavillion, splash pad during the summer months, playground, and pickleball courts.",
-            "image": "images/localBusiness3.webp"
+            "image": "images/black-smith-fork-park.webp"
         },
         {
             "areaName": "Blacksmith Fork Skateboard Park",
             "areaAddress": "1494 Hyrum Blvd",
             "areaDescription": "Blacksmith Fork Skate Park is a dynamically designed space for skateboarders of all abilities. This urban park provides both challenge and enjoyment for all skateboarders and rollerbladers.",
-            "image": "images/localBusiness3.webp"
+            "image": "images/skate-park.webp"
         },
         {
             "areaName": "Hyrum City Historic Tours",
             "areaAddress": "50 West Main Street",
             "areaDescription": "The Hyrum City Museum has a historic tour of Hyrum, Utah, available on their website. Learn about the historic houses, churches, and landmarks in Hyrum.",
-            "image": "images/localBusiness3.webp"
+            "image": "images/historic-tours.webp"
         }
     ]
 }
