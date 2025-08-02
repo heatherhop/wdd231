@@ -24,6 +24,17 @@ document.addEventListener("DOMContentLoaded", () => {
 const displayAreas = (areas) => {
     areasContainer.innerHTML = "";
 
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                entry.target.setAttribute("loading", "lazy");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        rootMargin: '100px'
+    });
+
     areas.forEach((area) => {
         let areaCard = document.createElement("section");
         areaCard.classList.add("areaCard");
@@ -40,7 +51,6 @@ const displayAreas = (areas) => {
         let image = document.createElement("img");
         image.setAttribute("src", area.image);
         image.setAttribute("alt", area.areaName);
-        image.setAttribute("loading", "lazy");
         image.setAttribute("width", "300");
         image.setAttribute("height", "200");
 
@@ -50,5 +60,6 @@ const displayAreas = (areas) => {
         areaCard.appendChild(image);
 
         areasContainer.appendChild(areaCard);
+        observer.observe(image);
     })
 }
