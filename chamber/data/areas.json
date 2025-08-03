@@ -10,7 +10,7 @@
             "areaName": "Hyrum City Museum",
             "areaAddress": "50 West Main Street",
             "areaDescription": "The Hyrum City Museum is a small town museum that creates a small town feel experience. The museum provides educational activities, interpretive exhibits, and shares artifacts and historical materials that provide visitors an opportunity to connect with local heritage and our community.",
-            "image": "images/hyrum-city-museum.jpg"
+            "image": "images/hyrum-city-museum.webp"
         },
         {
             "areaName": "American West Heritage Center",
@@ -22,13 +22,13 @@
             "areaName": "Golden Hour Farm",
             "areaAddress": "1430 W 6710 S",
             "areaDescription": "Golden Hour Farm lives in the hills of Cache Valley. Golden Hour Farm is a beef cattle ranch that offers unique experiences, including picking your own beef cow and a cowboy experience including scenic horseback rinding in the green rolling pastures at the base of the valleys mountains.",
-            "image": "images/localBusiness3.webp"
+            "image": "images/golden-hour-farm.webp"
         },
         {
             "areaName": "Salt Hollow Park",
             "areaAddress": "350 West 100 North",
             "areaDescription": "The Salt Hollow Park offers a great gathering place for families and groups. The park includes a splash pad in the summer, sledding hill in the winter, bowery, playground, restrooms, walking trails, frisbee gold, and picnic areas.",
-            "image": "images/localBusiness3.webp"
+            "image": "images/salt-hollow-park.webp"
         },
         {
             "areaName": "Blacksmith Fork Park",
