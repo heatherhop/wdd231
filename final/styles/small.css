@@ -161,14 +161,16 @@ header span {
     padding: 10px;
     margin-bottom: 25px;
     border-radius: 8px;
+    font-size: 1.1rem;
 }
 
 .join-btn:hover {
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     background-color: var(--accent-color2);
+    
 }
 
 .events-weather-section {
@@ -328,6 +330,8 @@ header span {
 
 .info {
     background-color: var(--accent-color2);
+    display: flex;
+    flex-direction: column;
 }
 
 table {
@@ -352,6 +356,10 @@ table tr {
 
 thead th, tr:nth-child(even) {
     background-color: var(--accent-color3);
+}
+
+.form {
+    background-color: var(--accent-color2);
 }
 
 .formDesign {
@@ -401,13 +409,15 @@ legend {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     display: block;
     margin: 10px auto;
-    padding: 4px;
+    padding: 5px;
+    font-size: 1.1rem;
+    background-color: var(--accent-color3);
 }
 
 .submit-btn:hover {
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
-    font-size: 1.05rem;
+    font-size: 1.15rem;
 }
 
 /* ************************* Newsletter Thank You Page *************************** */

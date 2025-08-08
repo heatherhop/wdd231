@@ -1,7 +1,6 @@
 const file = 'data/wrestlers.json';
-const wrestlerSpotlightContainer = document.querySelector("#spotlight");
 
-async function getWrestlerData() {
+export async function getWrestlerData() {
     try {
         const response = await fetch(file);
         if (response.ok) {
@@ -12,10 +11,11 @@ async function getWrestlerData() {
         }
     } catch (error) {
         console.error("There is a problem with your fetch operation:", error);
+        return [];
     }
 };
 
-const createWrestlerSpotlightCards = (wrestlers, container) => {
+export function createWrestlerSpotlightCards(wrestlers, container) {
     container.innerHTML = "";
 
     wrestlers.forEach(wrestler => {
@@ -28,7 +28,6 @@ const createWrestlerSpotlightCards = (wrestlers, container) => {
         favorite.classList.add("favorite");
         let image = document.createElement("img");
         let btn = document.createElement("button");
-
 
         name.innerHTML = `${wrestler.firstName} ${wrestler.lastName}`;
         years.innerHTML = `<strong>Years in Wrestling:</strong> ${wrestler.yearsWrestled}`;
@@ -60,7 +59,7 @@ const createWrestlerSpotlightCards = (wrestlers, container) => {
             <img src=${wrestler.wrestlerImage} alt=${wrestler.firstName} ${wrestler.lastName}, width=200, height=200>
             <p>${wrestler.bio}</p>`;
             modal.showModal();
-            
+
             const closeModal = document.querySelector('.close-modal-button');
             if (closeModal) {
                 closeModal.addEventListener("click", () => {
@@ -69,15 +68,8 @@ const createWrestlerSpotlightCards = (wrestlers, container) => {
             } else {
                 console.warn("Close modal button not found within the modal content.");
             }
-            
+
         });
     });
 }
-
-document.addEventListener("DOMContentLoaded", async () => {
-    if (wrestlerSpotlightContainer) {
-        const wrestlers = await getWrestlerData();
-        createWrestlerSpotlightCards(wrestlers, wrestlerSpotlightContainer);
-    }
-});
 
