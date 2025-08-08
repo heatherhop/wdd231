@@ -1,0 +1,84 @@
+{
+    "wrestlers": [
+        {
+            "firstName": "Leo",
+            "lastName": "Ramirez",
+            "yearsWrestled": 5,
+            "favoriteThing": "The feeling of a perfect takedown.",
+            "wrestlerImage": "https://placehold.co/200x200/E50000/FFFFFF?text=Leo",
+            "bio": "Leo is 15 years old and grew up in Salt Lake City, Utah. He loves to go hiking and exploring new trails with his friends. His favorite color is blue, and his favorite subject in school is history. He has one younger sister named Sofia. His parents, Javier and Maria, are his biggest supporters."
+        },
+        {
+            "firstName": "Maya",
+            "lastName": "Singh",
+            "yearsWrestled": 3,
+            "favoriteThing": "Learning new techniques every practice.",
+            "wrestlerImage": "https://placehold.co/200x200/23282B/FFFFFF?text=Maya",
+            "bio": "Maya, 14, is a skilled violinist who plays in the school orchestra. She was born and raised in Provo, Utah. When she isn't wrestling, she enjoys baking pastries and listening to podcasts. Maya has a twin brother, Arjun. Her favorite food is homemade pasta."
+        },
+        {
+            "firstName": "Ethan",
+            "lastName": "Chen",
+            "yearsWrestled": 4,
+            "favoriteThing": "The intensity of a close match.",
+            "wrestlerImage": "https://placehold.co/200x200/666666/FFFFFF?text=Ethan",
+            "bio": "Ethan, 15, grew up in a small town outside of Ogden, Utah. His favorite activities include fishing and playing video games. He enjoys a good burger. He has two older brothers and a dog named Buster. His parents, Michael and Lily, are always cheering him on."
+        },
+        {
+            "firstName": "Chloe",
+            "lastName": "Davis",
+            "yearsWrestled": 2,
+            "favoriteThing": "The camaraderie with my teammates.",
+            "wrestlerImage": "https://placehold.co/200x200/E50000/FFFFFF?text=Chloe",
+            "bio": "Chloe is 13 and is from St. George, Utah. Her favorite food is pizza, and she loves painting in her free time. She has one older sister and no pets. She enjoys watching movies with her family. Her favorite color is purple."
+        },
+        {
+            "firstName": "Noah",
+            "lastName": "Brown",
+            "yearsWrestled": 6,
+            "favoriteThing": "Overcoming challenges and pushing my limits.",
+            "wrestlerImage": "https://placehold.co/200x200/666666/FFFFFF?text=Noah",
+            "bio": "Noah is 15 and grew up in sunny Moab, Utah. He enjoys reading and playing basketball. He is the oldest of three siblings. His favorite food is tacos. His parents, David and Samantha, both work as teachers."
+        },
+        {
+            "firstName": "Sophia",
+            "lastName": "Garcia",
+            "yearsWrestled": 3,
+            "favoriteThing": "The thrill of competing.",
+            "wrestlerImage": "https://placehold.co/200x200/23282B/FFFFFF?text=Sophia",
+            "bio": "Sophia, 14, is from Park City, Utah. Her hobbies include photography and playing guitar. She has a younger brother and an older sister. Her favorite color is yellow. Her parents, Roberto and Isabella, are both artists."
+        },
+        {
+            "firstName": "Liam",
+            "lastName": "White",
+            "yearsWrestled": 1,
+            "favoriteThing": "Getting stronger every day.",
+            "wrestlerImage": "https://placehold.co/200x200/E50000/FFFFFF?text=Liam",
+            "bio": "Liam is 15 years old and is the youngest wrestler on the team. He has an older brother named Ben. He enjoys playing video games with his friends and spending time outdoors. His favorite food is hamburgers. His parents, Tom and Julia, love his new wrestling hobby."
+        },
+        {
+            "firstName": "Isabella",
+            "lastName": "Kim",
+            "yearsWrestled": 4,
+            "favoriteThing": "The feeling of victory after hard work.",
+            "wrestlerImage": "https://placehold.co/200x200/666666/FFFFFF?text=Isabella",
+            "bio": "Isabella is 14 and from Layton, Utah. She loves to travel and learn about different cultures. Her favorite subject is art, and she enjoys painting. She is an only child. Her parents, Min-jun and Hae-won, are very proud of her."
+        },
+        {
+            "firstName": "Maverick",
+            "lastName": "Jones",
+            "yearsWrestled": 5,
+            "favoriteThing": "The bonds formed with my coaches.",
+            "wrestlerImage": "https://placehold.co/200x200/23282B/FFFFFF?text=Mason",
+            "bio": "Mason is 15 years old and grew up in Logan, Utah. He enjoys playing football and watching movies. His favorite food is steak. He has three siblings and is the middle child. His parents, Robert and Carol, own a small business."
+        },
+        {
+            "firstName": "Olivia",
+            "lastName": "Wilson",
+            "yearsWrestled": 2,
+            "favoriteThing": "The supportive atmosphere of the club.",
+            "wrestlerImage": "https://placehold.co/200x200/E50000/FFFFFF?text=Olivia",
+            "bio": "Olivia is 13 and is from West Jordan, Utah. She enjoys creative writing and listening to music. She has two older brothers and a pet cat named Luna. Her favorite color is green. Her parents, Frank and Helen, met in college."
+        }
+    ]
+}

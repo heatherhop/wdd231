@@ -91,7 +91,7 @@ header span {
     display: block;
     padding: .5rem 10px;
     text-decoration: none;
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .navigation li.current {
@@ -340,7 +340,6 @@ legend {
 }
 
 .submit-btn:hover {
-
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
     font-size: 1.05rem;

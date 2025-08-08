@@ -1,0 +1,41 @@
+{
+    "coaches": [
+        {
+            "firstName": "Coach",
+            "lastName": "Thompson",
+            "wrestlerImage": "https://placehold.co/200x200/23282B/FFFFFF?text=Coach+T",
+            "bio": "This week, we're shining a spotlight on Coach Thompson, a dedicated leader with a passion for the sport. Having coached for over 10 years and wrestled competitively throughout his youth in Salt Lake City, he brings a wealth of experience to the mat. \"My goal is to teach more than just wrestling moves,\" Coach Thompson says. \"I want to help our athletes develop the discipline, work ethic, and confidence they need to succeed in wrestling and in life.\" When he's not on the mat, you can find Coach Thompson spending time with his wife and two children, or fly fishing in the great outdoors."
+        },
+        {
+            "firstName": "Coach",
+            "lastName": "Garcia",
+            "wrestlerImage": "https://placehold.co/200x200/E50000/FFFFFF?text=Coach+G",
+            "bio": "This week, we're highlighting Coach Garcia, a former state champion with a competitive spirit. Growing up and wrestling in Ogden, Utah, she brings 7 years of coaching expertise to the team. \"Wrestling is as much a mental game as a physical one,\" Coach Garcia says. \"I focus on building mental toughness and a never-give-up attitude in all my athletes.\" When she's not on the mat, Coach Garcia is an avid rock climber and enjoys training for local competitions."
+        },
+        {
+            "firstName": "Coach",
+            "lastName": "Lee",
+            "wrestlerImage": "https://placehold.co/200x200/666666/FFFFFF?text=Coach+L",
+            "bio": "This week, we're celebrating Coach Lee, a passionate and positive role model. With 5 years of coaching experience, this Provo, Utah native is known for making wrestling a fun and engaging sport for everyone. \"I believe a positive environment is key to success,\" Coach Lee says. \"It's important that every wrestler feels supported and excited to come to practice.\" Outside of wrestling, you can find him volunteering at local community events or playing on a recreational softball team."
+        },
+        {
+            "firstName": "Coach",
+            "lastName": "Davis",
+            "wrestlerImage": "https://placehold.co/200x200/23282B/FFFFFF?text=Coach+D",
+            "bio": "This week, our spotlight is on Coach Davis, a specialist in conditioning and strength. For 8 years, this St. George, Utah coach has been preparing wrestlers for competition with rigorous training programs. \"Success comes from hard work and perseverance,\" Coach Davis says. \"My philosophy is to push our athletes to their limits so they can reach their full potential.\" When he's not in the gym, Coach Davis enjoys hiking and exploring the beautiful national parks around his home."
+        },
+        {
+            "firstName": "Coach",
+            "lastName": "Wilson",
+            "wrestlerImage": "https://placehold.co/200x200/E50000/FFFFFF?text=Coach+W",
+            "bio": "This week, we're introducing Coach Wilson, a dedicated mentor with a focus on fundamentals. As a newer coach with 3 years of experience, this Layton, Utah native is dedicated to ensuring every wrestler has a strong foundation. \"The basics are the building blocks of every great wrestler,\" Coach Wilson says. \"I love teaching the foundational techniques and seeing the lightbulb go off when an athlete masters a new skill.\" Her favorite hobby outside of coaching is mountain biking, which she does with her family."
+        },
+        {
+            "firstName": "Coach",
+            "lastName": "Hunter",
+            "wrestlerImage": "https://placehold.co/200x200/666666/FFFFFF?text=Coach+H",
+            "bio": "This week, we're shining a spotlight on Coach Hunter, a dedicated leader with a passion for the sport. Having wrestled competitively for 15 years and coached for 7 years, Coach Hunter brings a wealth of experience to the mat. \"My goal is to teach more than just wrestling moves,\" Coach Hunter says. \"I want to help our athletes develop the discipline, work ethic, and confidence they need to succeed in wrestling and in life.\" When he's not on the mat, you can find Coach Hunter spending time with his wife and 2 kids, or in the great outdoors."
+        }
+    ]
+}
+

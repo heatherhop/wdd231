@@ -1,0 +1,107 @@
+@media only screen and (min-width: 992px) {
+
+    header,
+    main,
+    footer,
+    nav {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 60px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: 1px solid var(--secondary-color);
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .join-section {
+        display: grid;
+        grid-template-columns: 1fr 250px;
+
+    }
+
+    .join p {
+        padding: 12px;
+        margin: 20px;
+    }
+
+    .weather {
+        position: relative;
+        padding: 10px;
+    }
+
+    .weather img {
+        position: absolute;
+        right: 35px;
+        top: 35px;
+    }
+
+    .weather p {
+        text-align: left;
+        padding: 2px;
+    }
+
+    .events-section {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    .coach-spotlight {
+        grid-template-areas:
+            "image name"
+            "image bio";
+    }
+
+    .wrestler-spotlights {
+        display: grid;
+        grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr);
+      
+    }
+
+    .wrestlerCard {
+        overflow: hidden;
+        grid-template-areas: 
+        "image name"
+        "image years"
+        "image favorite"
+        "image button";
+    }
+
+    .wrestlerCard img{
+       
+        margin-bottom: 0;
+        border-radius: 0;
+        margin: 0px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .wrestlerCard button{
+        max-width: 80%;
+    }
+
+ 
+
+    .footer {
+        display: grid;
+        grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
+        background-color: var(--secondary-color);
+        color: var(--accent-color3);
+        text-align: left;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project Contact Page</title>
+    <meta name="description" content="WDD 231 Final Contact Page for a local wrestling site">
+    <meta name="author" content="Heather Hopkins">
+    <meta property="og:title" content="Join the Bear Mountain Wrestling Club">
+    <meta property="og:description"
+        content="Empowering youth through wrestling! Our program for kids and teens focuses on discipline, physical fitness, and leadership skills. All experience levels welcome.">
+    <meta property="og:url" content="https://heatherhop.github.io/wdd231/final/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 992px)">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/wrestlers-icon.webp" alt="two wrestlers" width="48" height="48">
+        <span>Bear Mountain Wrestling Club</span>
+        <button id="ham-btn" class="hamburger" type="button" aria-label="Open navigation menu"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="wrestlers.html">ALL-STAR</a></li>
+            <li class="current"><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <section class="container info">
+                <h2>Club Info</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Open Practice</th>
+                            <th>Live Wrestle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Monday</th>
+                            <td>4:00 - 8:00 pm</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Tuesday</th>
+                            <td>4:00 - 8:00 pm</td>
+                            <td>8:00 - 9:00 pm</td>
+                        </tr>
+                        <tr>
+                            <th>Wednesday</th>
+                            <td>4:00 - 8:00 pm</td>
+                            <td>8:00 - 9:00 pm</td>
+                        </tr>
+                        <tr>
+                            <th>Thursday</th>
+                            <td>4:00 - 8:00 pm</td>
+                            <td>8:00 - 9:00 pm</td>
+                        </tr>
+                        <tr>
+                            <th>Friday</th>
+                            <td>4:00 - 6:00 pm</td>
+                            <td>No Live Wrestle</td>
+                        </tr>
+                        <tr>
+                            <th>Saturday</th>
+                            <td>8:00 am - noon</td>
+                            <td>1:00 - 3:00 pm</td>
+                        </tr>
+                        <tr>
+                            <th>Sunday</th>
+                            <td>No Practice</td>
+                            <td>No Live Wrestle</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="container">
+                <h2>Newsletter</h2>
+                <form method="get" action="thankyou.html" class="formDesign">
+                    <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                            title="First Name"></label>
+                    <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                            title="Last Name"></label>
+                    <label>Email <input type="email" name="email" required autocomplete="email"
+                            title="Your email address" placeholder="emailaddress@email.com"></label>
+                    <label>Addition Infomation<textarea name="description" title="addition information" rows="3"
+                            cols="30"></textarea></label>
+                    <fieldset>
+                        <legend>Wrestler Skill Level</legend>
+                        <div class="radio">
+                            <label><input type="radio" name="skill-level" value="Novice" checked>Novice Level</label>
+                            <label><input type="radio" name="skill-level" value="Beginner">Beginner Level</label>
+                            <label><input type="radio" name="skill-level" value="Intermediate">Intermediate
+                                Level</label>
+                            <label><input type="radio" name="skill-level" value="Expert">Expert Level</label>
+                        </div>
+                    </fieldset>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <button class="submit-btn" type="submit" value="subsrcibe">Subscribe</button>
+
+                </form>
+            </section>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div>
+            <h4>Bear Mountain Wrestling Club</h4>
+            <p>77 Main Street</p>
+            <p>Bear Mountain, UT 84444</p>
+            <p>info@BMWC.org</p>
+            <p>(789)789-0000</p>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt="facebook logo"
+                    width="24" height="24"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/icon-linkedin.svg" alt="linkedin logo"
+                    width="24" height="24"></a>
+            <a href="https://x.com" target="_blank"><img src="images/icon-twitter.svg" alt="x twitter logo" width="24"
+                    height="24"></a>
+        </div>
+        <div class="date">
+            <p id="currentYear"><span></span></p>
+            <p id="lastModified"><span></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

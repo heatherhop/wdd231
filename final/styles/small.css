@@ -1,14 +1,16 @@
 :root {
-    --primary-color: rgb(229,0,0);
-    --secondary-color: rgb(35,40,43);
-    --tertiary-color: rgb(0,0,0);
-    --accent-color1: rgb(102,102,102);
-    --accent-color2: rgb(238,238,238);
-    --accent-color3: rgb(255,255,255);
-    
+    --primary-color: rgb(229, 0, 0);
+    --secondary-color: rgb(35, 40, 43);
+    --tertiary-color: rgb(0, 0, 0);
+    --accent-color1: rgb(102, 102, 102);
+    --accent-color2: rgb(238, 238, 238);
+    --accent-color3: rgb(255, 255, 255);
+
     --font-family: "Lato", sans-serif;
     --font-family2: "Roboto", sans-serif;
 }
+
+/* ************************* SITE WIDE ************************* */
 
 * {
     box-sizing: border-box;
@@ -23,23 +25,487 @@ body {
 h1 {
     color: var(--primary-color);
     font-family: var(--font-family2);
-    padding: 5px;
+    margin: 20px 10px;
 }
 
 h2 {
     color: var(--secondary-color);
     font-family: var(--font-family2);
-    padding: 5px;
+    background-color: var(--secondary-color);
+    color: var(--accent-color3);
+    padding: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
-p {
+h3 {
+    font-family: var(--font-family2);
+}
+
+p,
+li {
     color: var(--accent-color1);
     font-family: var(--font-family);
-    padding: 5px;
-    margin-left: 15px;
+    margin: 2px;
+    padding: 2px;
 }
 
-img { 
+/* ************************* HEADER **************************** */
+
+header {
+    border-top: 65px solid var(--secondary-color);
+    display: grid;
+    grid-template-columns: 60px auto 44px;
+    margin: 5px 0 5px 10px;
+    padding: 10px;
+    column-gap: 12px;
+    align-items: center;
+    border-bottom: solid 1px var(--secondary-color);
+}
+
+header img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 3px solid var(--primary-color);
+    border-radius: 60px;
+    padding: 4px;
+}
+
+header span {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-family: var(--font-family);
+}
+
+/* ************************* NAVIGATION ************************ */
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7"
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: var(--secondary-color);
+    display: block;
+    padding: .5rem 10px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.navigation li.current {
+    background-color: var(--accent-color2);
+}
+
+.navigation a:hover {
+    color: var(--accent-color3);
+    background-color: var(--accent-color1);
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.5rem;
+}
+
+/* ************************* MAIN **************************** */
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container {
+    border: 1px solid var(--secondary-color);
+    margin: 30px 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.join p {
+    padding: 10px;
+    margin: 15px;
+}
+
+.join-btn {
+    display: inline-block;
+    box-sizing: border-box;
+    color: var(--primary-color);
+    font-family: var(--font-family2);
+    text-decoration: none;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.join-btn:hover {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.05rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--accent-color2);
+}
+
+.events-weather-section {
+    display: block;
+}
+
+.weather {
+    position: relative;
+    padding: 10px;
+}
+
+.weather img {
+    position: absolute;
+    right: 30px;
+}
+
+.weather p {
+    text-align: left;
+    padding: 2px;
+}
+
+.events-calendar {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+}
+
+.events-calendar li {
+    padding: 3px;
+}
+
+.coachesCard {
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "bio";
+}
+
+.coachesCard h3 {
     margin: 20px;
+    grid-area: name;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.coachesCard p {
+    line-height: 1.5rem;
+    grid-area: bio;
+    padding: 15px;
+}
+
+.coachesCard img {
+    grid-area: image;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.visits {
+    margin: 30px 10px;
+    border: 1px solid red;
+}
+
+/* ************************* ALL-STAR PAGE **************************** */
+
+.wrestlerCard {
+    border: 1px solid var(--secondary-color);
+    margin: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 8px;
+    display: grid;
+    grid-template-areas:
+        "name"
+        "years"
+        "favorite"
+        "image"
+        "button";
+}
+
+.wrestlerCard h3 {
+    padding: 2px;
+    margin-top: 5px;
+    grid-area: name;
+    color: var(--primary-color)
+}
+
+.wrestlerCard .years {
+    grid-area: years;
+}
+
+.wrestlerCard .favorite {
+    grid-area: favorite;
+}
+
+.wrestlerCard img {
+    grid-area: image;
+    margin: 10px auto;
+    border-radius: 8px;
+
+}
+
+.wrestlerCard button {
+    grid-area: button;
+    color: var(--primary-color);
+    font-family: var(--font-family2);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px auto 20px;
     padding: 5px;
+    border-radius: 8px;
+}
+
+.wrestlerCard button:hover {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.05rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--accent-color2);
+}
+
+#wrestler-bio {
+    width: 60%;
+    position: relative;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+
+}
+
+#wrestler-bio button {
+    position: absolute;
+    right: 20px;
+    border: none;
+}
+
+#wrestler-bio h3 {
+    font-size: 2rem;
+}
+
+#wrestler-bio p {
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+}
+
+#wrestler-bio img {
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ********************** CONTACT PAGE ************************* */
+
+.contact-info {
+    display: grid;
+}
+
+.info {
+    background-color: var(--accent-color2);
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table th {
+    font-family: var(--font-family);
+    text-align: left;
+    padding: 15px;
+    margin: 10px;
+}
+
+thead th {
+    color: var(--primary-color)
+}
+
+table tr {
+    text-align: center;
+}
+
+thead th, tr:nth-child(even) {
+    background-color: var(--accent-color3);
+}
+
+.formDesign {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+    margin: 20px;
+}
+
+.formDesign label,
+input:not([type="radio"]),
+textarea {
+    margin-top: 10px;
+    text-align: left;
+    display: block;
+    padding: 2px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+    margin: 10px;
+}
+
+legend {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.radio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2px;
+}
+
+.radio label {
+    display: flex;
+    margin: 2px;
+}
+
+.submit-btn {
+    align-self: center;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 10px auto;
+    padding: 4px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.05rem;
+}
+
+/* ************************* Newsletter Thank You Page *************************** */
+
+.results {
+    color: var(--primary-color);
+
+}
+
+.results p {
+    text-align: center;
+    margin-bottom: 4px;
+    /* font-size: 1.2rem; */
+
+}
+
+.thankyou {
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.results ul li {
+    list-style: none;
+    margin-left: 30px;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+.result {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.1rem;
+}
+
+.results a {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.results a:hover {
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.03rem;
+    text-decoration: underline;
+}
+
+/* ************************* FOOTER *************************** */
+
+.footer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 10px;
+    background-color: var(--secondary-color);
+    color: var(--accent-color3);
+    text-align: center;
+    align-items: center;
+}
+
+.footer h4 {
+    font-size: 1.25rem;
+    font-family: var(--font-family2);
+}
+
+.footer p {
+    font-family: var(--font-family);
+    color: var(--accent-color2);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    transition: transform 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+}
+
+.social a img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+}
+
+.date {
+    font-size: 14px;
 }
