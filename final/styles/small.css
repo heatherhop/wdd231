@@ -518,3 +518,10 @@ legend {
 .date {
     font-size: 14px;
 }
+
+.date a {
+    color: var(--primary-color);
+}
+
+
+
